@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-
+import TablaUsuarios from '@/modules/usuarios/pages/TablaUsuarios.vue'
 const routes = [
   {
     path: '/',
@@ -16,6 +16,11 @@ const routes = [
     component: function () {
       return import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
     }
+  }
+  ,{
+    path:'/usuarios',
+    name:'usuarios',
+    component:TablaUsuarios
   }
 ]
 
